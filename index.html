@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aesthetic Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- MÀN HÌNH 1: BAO THƯ TRẮNG ĐEN -->
+      <div class="screen-envelope" id="envelopeScreen">
+        <h1 class="top-title">YOU'VE GOT MAIL</h1>
+
+        <div class="envelope-box" id="openBtn">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body"></div>
+          <div class="heart-seal">✉️</div>
+        </div>
+
+        <p class="tap-hint">TAP HERE TO OPEN</p>
+      </div>
+
+      <!-- MÀN HÌNH 2: NỘI DUNG WEB -->
+      <div class="screen-card hidden" id="cardScreen">
+        <!-- NAV HEADER -->
+        <nav class="nav-bar">
+          <div class="menu-icon">☰</div>
+          <div class="nav-links">
+            <span>HOME</span>
+            <span>ABOUT</span>
+            <span>GALLERY</span>
+          </div>
+        </nav>
+
+        <!-- SECTION 1: KHUNG VIDEO LỚN -->
+        <div class="hero-section">
+          <div class="hero-frame">
+            <video
+              id="heroVideo"
+              class="hero-img"
+              autoplay
+              loop
+              muted
+              playsinline
+            >
+              <source src="./video 1.mp4" type="video/mp4" />
+              Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+
+            <!-- NÚT BẬT/TẮT TIẾNG -->
+            <button id="soundBtn" class="sound-btn">🔇</button>
+
+            <div class="hero-overlay-text">
+              <p class="subtitle">Một câu chuyện của chúng mình</p>
+              <p class="caption">và rồi mình gặp nhau</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2: BỐ TRÍ 3 KHỐI NGHỆ THUẬT -->
+        <div class="grid-section">
+          <div class="grid-container">
+            <!-- Cột trái: Text đen -->
+            <div class="grid-box box-text-dark">
+              <h4>1 NĂM 10 THÁNG<br />CÙNG NGƯỜI THƯƠNG</h4>
+              <div class="plus-icon">+</div>
+              <p class="desc-text">
+                Thêm một khoảng thời gian nữa mình ở bên nhau. Từ những ngày đầu
+                còn ngại ngùng đến những khoảnh khắc chẳng cần nói gì cũng hiểu
+                nhau. Cảm ơn vì đã cùng mình đi qua những ngày vui, những ngày
+                buồn và cả những ngày rất đỗi bình thường.
+              </p>
+            </div>
+
+            <!-- Cột giữa: Ảnh chính giữa -->
+            <div class="grid-box box-image">
+              <img src="./ảnh 3.jpg" alt="Center Image" />
+            </div>
+
+            <!-- Cột phải: Text trắng -->
+            <div class="grid-box box-text-light">
+              <h3>YÊU<br />VÀ<br />THƯƠNG<br />NHAU</h3>
+              <p class="quote-text">
+                Người mình thương là người khiến những ngày bình thường cũng trở
+                nên thật đặc biệt.<br /><br />
+                Không cần những điều quá lớn lao, chỉ cần mỗi ngày vẫn có nhau
+                là đủ.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 3: KHUNG POLAROID NGHIÊNG -->
+        <div class="polaroid-section">
+          <div class="polaroid-wrapper">
+            <!-- Polaroid 1 -->
+            <div class="polaroid-card pol-left">
+              <div class="polaroid-img-box">
+                <img src="./ảnh 4.jpg" alt="Reise" />
+              </div>
+              <div class="polaroid-tag">người mình thương</div>
+            </div>
+
+            <!-- Polaroid 2 -->
+            <div class="polaroid-card pol-right">
+              <div class="polaroid-img-box">
+                <img src="./ảnh 1.jpg" alt="Reiv" />
+              </div>
+              <div class="polaroid-tag">người thương mình</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NÚT QUAY LẠI -->
+        <div class="footer-section">
+          <p class="back-btn" id="backBtn">GO BACK TO ENVELOPE</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="mai.js"></script>
+  </body>
+</html>
